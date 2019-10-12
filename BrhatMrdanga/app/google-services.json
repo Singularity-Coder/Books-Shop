@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "814059689422",
+    "firebase_url": "https://repo2-bbeef.firebaseio.com",
+    "project_id": "repo2-bbeef",
+    "storage_bucket": "repo2-bbeef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814059689422:android:94b83421ac5c661d56079f",
+        "android_client_info": {
+          "package_name": "com.singularitycoder.brhatmrdanga"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "814059689422-mtcv7ej2st0e57bpkhqbn337u1bufi18.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.singularitycoder.brhatmrdanga",
+            "certificate_hash": "7103a7bcaec4b678c15693a01fd6fd2046957a0e"
+          }
+        },
+        {
+          "client_id": "814059689422-519raaiqp2ovnkn1ldovppc5ums9irok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNCUQSrQqeOvOwKd3CVPGBsziKricfP8U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "814059689422-519raaiqp2ovnkn1ldovppc5ums9irok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
