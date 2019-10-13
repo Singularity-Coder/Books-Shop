@@ -35,8 +35,8 @@ public class PlacesVisitedAdapter extends RecyclerView.Adapter<RecyclerView.View
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         PlaceModel placeModel = placeList.get(position);
-        ((PlaceViewHolder) holder).tvPlaceName.setText(placeModel.getStrName());
-        ((PlaceViewHolder) holder).tvDate.setText(placeModel.getStrDate());
+        ((PlaceViewHolder) holder).tvPlaceName.setText(placeModel.getPlaceName());
+        ((PlaceViewHolder) holder).tvDate.setText(placeModel.getDateVisited());
     }
 
     @Override

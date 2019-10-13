@@ -2,52 +2,52 @@ package com.singularitycoder.brhatmrdanga.home;
 
 public class PlaceModel {
 
-    String strName;
-    String strBooksSold;
-    String strLakshmiEarned;
-    String strDate;
+    String placeName;
+    String booksSold;
+    String lakshmiEarned;
+    String dateVisited;
 
-    public PlaceModel(String strName, String strBooksSold, String strLakshmiEarned, String strDate) {
-        this.strName = strName;
-        this.strBooksSold = strBooksSold;
-        this.strLakshmiEarned = strLakshmiEarned;
-        this.strDate = strDate;
+    public PlaceModel(String placeName, String booksSold, String lakshmiEarned, String dateVisited) {
+        this.placeName = placeName;
+        this.booksSold = booksSold;
+        this.lakshmiEarned = lakshmiEarned;
+        this.dateVisited = dateVisited;
     }
 
-    public PlaceModel(String strName, String strDate) {
-        this.strName = strName;
-        this.strDate = strDate;
+    public PlaceModel(String placeName, String dateVisited) {
+        this.placeName = placeName;
+        this.dateVisited = dateVisited;
     }
 
-    public String getStrName() {
-        return strName;
+    public String getPlaceName() {
+        return placeName;
     }
 
-    public void setStrName(String strName) {
-        this.strName = strName;
+    public void setPlaceName(String placeName) {
+        this.placeName = placeName;
     }
 
-    public String getStrBooksSold() {
-        return strBooksSold;
+    public String getBooksSold() {
+        return booksSold;
     }
 
-    public void setStrBooksSold(String strBooksSold) {
-        this.strBooksSold = strBooksSold;
+    public void setBooksSold(String booksSold) {
+        this.booksSold = booksSold;
     }
 
-    public String getStrLakshmiEarned() {
-        return strLakshmiEarned;
+    public String getLakshmiEarned() {
+        return lakshmiEarned;
     }
 
-    public void setStrLakshmiEarned(String strLakshmiEarned) {
-        this.strLakshmiEarned = strLakshmiEarned;
+    public void setLakshmiEarned(String lakshmiEarned) {
+        this.lakshmiEarned = lakshmiEarned;
     }
 
-    public String getStrDate() {
-        return strDate;
+    public String getDateVisited() {
+        return dateVisited;
     }
 
-    public void setStrDate(String strDate) {
-        this.strDate = strDate;
+    public void setDateVisited(String dateVisited) {
+        this.dateVisited = dateVisited;
     }
 }

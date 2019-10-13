@@ -33,10 +33,10 @@ public class PlaceAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         PlaceModel placeModel = placeList.get(position);
-        ((PlaceViewHolder) holder).tvPlaceName.setText(placeModel.getStrName());
-        ((PlaceViewHolder) holder).tvBooksSold.setText(placeModel.getStrBooksSold());
-        ((PlaceViewHolder) holder).tvLakshmiEarned.setText(placeModel.getStrLakshmiEarned());
-        ((PlaceViewHolder) holder).tvDate.setText(placeModel.getStrDate());
+        ((PlaceViewHolder) holder).tvPlaceName.setText(placeModel.getPlaceName());
+        ((PlaceViewHolder) holder).tvBooksSold.setText(placeModel.getBooksSold());
+        ((PlaceViewHolder) holder).tvLakshmiEarned.setText(placeModel.getLakshmiEarned());
+        ((PlaceViewHolder) holder).tvDate.setText(placeModel.getDateVisited());
     }
 
     @Override

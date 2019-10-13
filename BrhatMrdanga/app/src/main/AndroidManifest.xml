@@ -31,7 +31,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".rankings.TeamRankingsActivity"></activity>
+        <activity android:name=".home.TeamActivity"></activity>
+        <activity android:name=".rankings.TeamRankingsActivity" />
         <activity
             android:name=".rankings.MemberRankingsActivity"
             android:parentActivityName=".home.HomeActivity"

@@ -30,7 +30,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.singularitycoder.brhatmrdanga.Helper;
 import com.singularitycoder.brhatmrdanga.R;
-import com.singularitycoder.brhatmrdanga.home.PlaceAdapter;
 import com.singularitycoder.brhatmrdanga.home.PlaceModel;
 
 import java.util.ArrayList;
@@ -451,10 +450,10 @@ public class ProfileView extends AppCompatActivity {
         reachOverviewRecycler.setDrawingCacheEnabled(true);
         reachOverviewRecycler.setDrawingCacheQuality(View.DRAWING_CACHE_QUALITY_HIGH);
 
-        CallerStatsAdapter callerStatsAdapter = new CallerStatsAdapter(callerStatsList, this, "");
-        callerStatsAdapter.setHasStableIds(true);
+        MemberStatsAdapter memberStatsAdapter = new MemberStatsAdapter(callerStatsList, this, "");
+        memberStatsAdapter.setHasStableIds(true);
 
-        reachOverviewRecycler.setAdapter(callerStatsAdapter);
+        reachOverviewRecycler.setAdapter(memberStatsAdapter);
     }
 
     private void setUpPlacesVisitedList() {

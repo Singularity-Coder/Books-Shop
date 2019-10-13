@@ -6,19 +6,34 @@
     android:layout_height="wrap_content"
     android:background="@color/colorWhite">
 
-    <ImageView
-        android:id="@+id/img_book_pic"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_book_image"
         android:layout_width="80dp"
         android:layout_height="100dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/bg"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_book_pic"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_profile_image"
@@ -62,7 +77,7 @@
         android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/tv_date"
-        app:layout_constraintStart_toEndOf="@+id/img_book_pic"
+        app:layout_constraintStart_toEndOf="@+id/card_book_image"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -140,9 +155,9 @@
         android:scaleType="centerCrop"
         android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
         android:tint="@color/colorGrey"
-        app:layout_constraintBottom_toBottomOf="@+id/img_book_pic"
+        app:layout_constraintBottom_toBottomOf="@+id/card_book_image"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/img_book_pic" />
+        app:layout_constraintTop_toTopOf="@+id/card_book_image" />
 
     <ImageView
         android:id="@+id/img_accept"

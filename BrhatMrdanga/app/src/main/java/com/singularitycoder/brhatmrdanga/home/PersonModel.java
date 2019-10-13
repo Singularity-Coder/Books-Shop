@@ -3,12 +3,18 @@ package com.singularitycoder.brhatmrdanga.home;
 public class PersonModel {
 
     int imgProfileImage;
+    String firstName;
+    String lastName;
+    String booksSold;
+    String lakshmiEarned;
     int imgGroupProfileImage;
     String strName;
     String strSubTitle1;
     String strSubTitle2;
     String strDate;
     String strChatCount;
+
+
 
     // Contact, Caller, Admin
     public PersonModel(int imgProfileImage, String strName, String strSubTitle1, String strSubTitle2) {

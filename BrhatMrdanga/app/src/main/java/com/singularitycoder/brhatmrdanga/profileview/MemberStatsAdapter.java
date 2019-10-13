@@ -15,12 +15,12 @@ import com.singularitycoder.brhatmrdanga.R;
 
 import java.util.ArrayList;
 
-public class CallerStatsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class MemberStatsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     ArrayList<ProfileView.StatsOrActionsModel> callerStatsList;
     Context context;
 
-    public CallerStatsAdapter(ArrayList<ProfileView.StatsOrActionsModel> callerStatsList, Context context, String dummy) {
+    public MemberStatsAdapter(ArrayList<ProfileView.StatsOrActionsModel> callerStatsList, Context context, String dummy) {
         this.callerStatsList = callerStatsList;
         this.context = context;
     }

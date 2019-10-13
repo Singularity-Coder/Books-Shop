@@ -14,16 +14,16 @@ import com.singularitycoder.brhatmrdanga.R;
 
 import java.util.ArrayList;
 
-public class AdapterContactCallerAdminChatNotif extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class MembersAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private Context mContext;
     private ArrayList<PersonModel> mAdminList;
     private OnItemClickListener clickListener;
 
-    public AdapterContactCallerAdminChatNotif() {
+    public MembersAdapter() {
     }
 
-    public AdapterContactCallerAdminChatNotif(Context context, ArrayList<PersonModel> adminList) {
+    public MembersAdapter(Context context, ArrayList<PersonModel> adminList) {
         mContext = context;
         mAdminList = adminList;
     }
@@ -39,7 +39,8 @@ public class AdapterContactCallerAdminChatNotif extends RecyclerView.Adapter<Rec
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         PersonModel personModel = mAdminList.get(position);
 
-        ((AdminViewHolder) holder).imgProfileImage.setImageResource(personModel.getImgProfileImage());
+//        ((AdminViewHolder) holder).imgProfileImage.setImageResource(personModel.getImgProfileImage());
+        ((AdminViewHolder) holder).imgProfileImage.setImageResource(R.drawable.face3);
         ((AdminViewHolder) holder).imgProfileImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

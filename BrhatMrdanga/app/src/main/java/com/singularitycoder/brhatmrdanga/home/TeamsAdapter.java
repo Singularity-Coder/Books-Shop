@@ -16,10 +16,10 @@ import java.util.ArrayList;
 
 public class TeamsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
-    ArrayList<TeamsModel> teamsList;
+    ArrayList<TeamModel> teamsList;
     Context context;
 
-    public TeamsAdapter(ArrayList<TeamsModel> teamsList, Context context) {
+    public TeamsAdapter(ArrayList<TeamModel> teamsList, Context context) {
         this.teamsList = teamsList;
         this.context = context;
     }
@@ -33,11 +33,11 @@ public class TeamsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-        TeamsModel teamsModel = teamsList.get(position);
-        ((TeamsViewHolder) holder).imgTeamImage.setImageResource(teamsModel.getIntTeamImage());
-        ((TeamsViewHolder) holder).tvTeamName.setText(teamsModel.getStrTeamName());
-        ((TeamsViewHolder) holder).tvBooksSold.setText(teamsModel.getStrBooksSold());
-        ((TeamsViewHolder) holder).tvLakshmiEarned.setText(teamsModel.getStrLakshmiEarned());
+        TeamModel teamModel = teamsList.get(position);
+        ((TeamsViewHolder) holder).imgTeamImage.setImageResource(R.drawable.header2_small);
+        ((TeamsViewHolder) holder).tvTeamName.setText(teamModel.getTeamName());
+        ((TeamsViewHolder) holder).tvBooksSold.setText(teamModel.getBooksSold());
+        ((TeamsViewHolder) holder).tvLakshmiEarned.setText(teamModel.getLakshmiEarned());
     }
 
     @Override

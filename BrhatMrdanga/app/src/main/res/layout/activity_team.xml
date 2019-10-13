@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".home.TeamActivity">
+
+    <EditText
+        android:id="@+id/team_name"
+        style="@style/StyleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:hint="Team Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/team_members_count"
+        style="@style/StyleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:hint="Team Members"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/team_books_sold_count"
+        style="@style/StyleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:hint="Books Sold"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/team_lakshmi_earned_count"
+        style="@style/StyleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:hint="Lakshmi Earned"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/team_books_taken_count"
+        style="@style/StyleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:hint="Books Taken Count"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/team_submit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="createTeam"
+        android:background="@drawable/bg_button"
+        android:text="CREATE TEAM"
+        android:textColor="@color/colorLightBlue"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
