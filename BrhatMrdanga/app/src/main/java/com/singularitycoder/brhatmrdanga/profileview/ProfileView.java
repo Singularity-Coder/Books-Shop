@@ -28,9 +28,9 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.singularitycoder.brhatmrdanga.Helper;
+import com.singularitycoder.brhatmrdanga.helpers.Helper;
 import com.singularitycoder.brhatmrdanga.R;
-import com.singularitycoder.brhatmrdanga.home.PlaceModel;
+import com.singularitycoder.brhatmrdanga.home.model.PlaceModel;
 
 import java.util.ArrayList;
 
@@ -429,7 +429,7 @@ public class ProfileView extends AppCompatActivity {
     private void setUpCallerStatsList() {
         ArrayList<StatsOrActionsModel> callerStatsList = new ArrayList<>();
         callerStatsList.add(new StatsOrActionsModel(R.drawable.ic_book_black_24dp, "Books Sold", "300", "MemberStats"));
-        callerStatsList.add(new StatsOrActionsModel(R.drawable.ic_attach_money_black_24dp, "Lakshmi Earned", "25,300", "MemberStats"));
+        callerStatsList.add(new StatsOrActionsModel(R.drawable.ic_attach_money_black_24dp, "Money Earned", "25,300", "MemberStats"));
         callerStatsList.add(new StatsOrActionsModel(R.drawable.ic_tasks_finished_black_24dp, "Tasks Finished", "24", "MemberStats"));
         callerStatsList.add(new StatsOrActionsModel(R.drawable.ic_pending_black_24dp, "Tasks Pending", "3", "MemberStats"));
         callerStatsList.add(new StatsOrActionsModel(R.drawable.ic_hourspent_black_24dp, "Hours Spent", "54", "MemberStats"));

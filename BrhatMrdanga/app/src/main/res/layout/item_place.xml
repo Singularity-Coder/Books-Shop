@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/header" />
+            android:src="@drawable/books" />
 
     </androidx.cardview.widget.CardView>
 

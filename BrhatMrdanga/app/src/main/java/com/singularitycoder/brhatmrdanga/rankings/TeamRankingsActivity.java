@@ -42,27 +42,27 @@ public class TeamRankingsActivity extends AppCompatActivity {
         recyclerView.setDrawingCacheQuality(View.DRAWING_CACHE_QUALITY_HIGH);
 
         rankingsList = new ArrayList<>();
-        rankingsList.add(new RankingsModel(R.drawable.header2_small, "Gauranga", "1", "6453"));
-        rankingsList.add(new RankingsModel(R.drawable.header_small, "Swastika", "2", "5453"));
-        rankingsList.add(new RankingsModel(R.drawable.header2_small, "Blaze", "3", "4453"));
-        rankingsList.add(new RankingsModel(R.drawable.header_small, "Fire Bolt", "4", "3453"));
-        rankingsList.add(new RankingsModel(R.drawable.header2_small, "Samwartaka", "5", "2453"));
-        rankingsList.add(new RankingsModel(R.drawable.header_small, "Balaram Force", "6", "1453"));
-        rankingsList.add(new RankingsModel(R.drawable.header2_small, "Rukmini Sevaks", "7", "953"));
-        rankingsList.add(new RankingsModel(R.drawable.header_small, "Akrura", "8", "853"));
-        rankingsList.add(new RankingsModel(R.drawable.header2_small, "Ice Warriors", "9", "753"));
-        rankingsList.add(new RankingsModel(R.drawable.header_small, "Vibrations", "10", "653"));
-        rankingsList.add(new RankingsModel(R.drawable.header2_small, "Nama Prabhu", "11", "553"));
-        rankingsList.add(new RankingsModel(R.drawable.header_small, "Vrishabhanu", "12", "453"));
-        rankingsList.add(new RankingsModel(R.drawable.header2_small, "Mega Clubs", "13", "353"));
-        rankingsList.add(new RankingsModel(R.drawable.header_small, "Sankarshana", "14", "303"));
-        rankingsList.add(new RankingsModel(R.drawable.header2_small, "Nama Prabhu", "15", "253"));
-        rankingsList.add(new RankingsModel(R.drawable.header_small, "Goloka Vasis", "16", "213"));
-        rankingsList.add(new RankingsModel(R.drawable.header2_small, "Indra", "17", "203"));
-        rankingsList.add(new RankingsModel(R.drawable.header_small, "Vishnu Sena", "18", "200"));
-        rankingsList.add(new RankingsModel(R.drawable.header2_small, "Ugra Rupa", "19", "199"));
-        rankingsList.add(new RankingsModel(R.drawable.header_small, "Universal Formers", "20", "190"));
-        rankingsList.add(new RankingsModel(R.drawable.header2_small, "Giant Trees", "21", "150"));
+        rankingsList.add(new RankingsModel(R.drawable.books, "Bronx", "1", "6453"));
+        rankingsList.add(new RankingsModel(R.drawable.b1, "Swaash", "2", "5453"));
+        rankingsList.add(new RankingsModel(R.drawable.books, "Blaze", "3", "4453"));
+        rankingsList.add(new RankingsModel(R.drawable.b2, "Fire Bolt", "4", "3453"));
+        rankingsList.add(new RankingsModel(R.drawable.books, "Samwell", "5", "2453"));
+        rankingsList.add(new RankingsModel(R.drawable.books, "Bingo Force", "6", "1453"));
+        rankingsList.add(new RankingsModel(R.drawable.books, "Rambo Roms", "7", "953"));
+        rankingsList.add(new RankingsModel(R.drawable.b1, "Acruuut", "8", "853"));
+        rankingsList.add(new RankingsModel(R.drawable.books, "Ice Warriors", "9", "753"));
+        rankingsList.add(new RankingsModel(R.drawable.books, "Vibrations", "10", "653"));
+        rankingsList.add(new RankingsModel(R.drawable.b2, "Yahooos", "11", "553"));
+        rankingsList.add(new RankingsModel(R.drawable.books, "Vianists", "12", "453"));
+        rankingsList.add(new RankingsModel(R.drawable.books, "Mega Clubs", "13", "353"));
+        rankingsList.add(new RankingsModel(R.drawable.books, "Shanks Club", "14", "303"));
+        rankingsList.add(new RankingsModel(R.drawable.books, "Vibratons", "15", "253"));
+        rankingsList.add(new RankingsModel(R.drawable.books, "Gloks", "16", "213"));
+        rankingsList.add(new RankingsModel(R.drawable.books, "Indi Devs", "17", "203"));
+        rankingsList.add(new RankingsModel(R.drawable.books, "Vivourins", "18", "200"));
+        rankingsList.add(new RankingsModel(R.drawable.books, "Ugzaaa", "19", "199"));
+        rankingsList.add(new RankingsModel(R.drawable.books, "Universal Formers", "20", "190"));
+        rankingsList.add(new RankingsModel(R.drawable.books, "Giant Trees", "21", "150"));
 
 
         mRankingsAdapter = new RankingsAdapter(rankingsList, this);

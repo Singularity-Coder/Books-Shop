@@ -26,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/header" />
+            android:src="@drawable/books" />
 
     </androidx.cardview.widget.CardView>
 
@@ -110,7 +110,7 @@
         android:ellipsize="end"
         android:marqueeRepeatLimit="marquee_forever"
         android:maxLines="1"
-        android:text="Lakshmi Earned: 4342"
+        android:text="Money Earned: 4342"
         android:textColor="@color/colorSubtitle"
         app:layout_constraintEnd_toStartOf="@+id/tv_count"
         app:layout_constraintStart_toStartOf="@+id/tv_name"

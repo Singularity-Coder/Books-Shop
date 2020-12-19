@@ -97,7 +97,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="5dp"
-                    android:text="Brihat Mridanga"
+                    android:text="Books Shop"
                     android:textColor="@color/colorBlack"
                     android:textSize="23sp" />
 
@@ -250,7 +250,7 @@
                     android:layout_marginBottom="20dp"
                     android:gravity="center_horizontal"
                     android:lineSpacingExtra="3dp"
-                    android:text="Hare Kṛṣṇa Hare Kṛṣṇa\nKṛṣṇa Kṛṣṇa Hare Hare\nHare Rāma Hare Rāma\nRāma Rāma Hare Hare"
+                    android:text="A Book a month \ncan keep your unemployment away! "
                     android:textColor="@color/colorSubtitle"
                     android:textSize="16sp" />
 

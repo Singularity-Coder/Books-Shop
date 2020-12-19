@@ -62,7 +62,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.singularitycoder.brhatmrdanga.R;
-import com.singularitycoder.brhatmrdanga.home.HomeActivity;
+import com.singularitycoder.brhatmrdanga.home.view.HomeActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -193,7 +193,7 @@ public class MainActivity extends AppCompatActivity {
         // Set Toolbar
         toolbar = findViewById(R.id.toolbar_main);
         setSupportActionBar(toolbar);
-//        if (getSupportActionBar() != null) getSupportActionBar().setTitle("Folk Caller");
+//        if (getSupportActionBar() != null) getSupportActionBar().setTitle("Books Caller");
     }
 
 
@@ -210,7 +210,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if (scrollRange + verticalOffset == 0) {
                     if (getSupportActionBar() != null)
-                        getSupportActionBar().setTitle("FOLK Caller");
+                        getSupportActionBar().setTitle("Books Shop");
                     isShow = true;
                 } else if (isShow) {
                     if (getSupportActionBar() != null) getSupportActionBar().setTitle(" ");
@@ -248,7 +248,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Set color of CollaspongToolbar when collapsing
         try {
-            Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.header);
+            Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.books);
             Palette.from(bitmap).generate(new Palette.PaletteAsyncListener() {
                 @SuppressWarnings("ResourceType")
                 @Override
@@ -361,7 +361,8 @@ public class MainActivity extends AppCompatActivity {
             btnLogin.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    validateLoginUser();
+//                    validateLoginUser();
+                    startActivity(new Intent(getActivity(), HomeActivity.class));
                 }
             });
 
@@ -459,13 +460,13 @@ public class MainActivity extends AppCompatActivity {
         public void dialogSignUpMemberType() {
             AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
             builder.setTitle("I am a");
-            String[] selectArray = {"Folk Member", "Admin"};
+            String[] selectArray = {"Book Member", "Admin"};
             builder.setItems(selectArray, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     switch (which) {
                         case 0:
-                            tvLoginMemberType.setText("Folk Member");
+                            tvLoginMemberType.setText("Shop Member");
 
                             tvFolkIdLogin.setVisibility(View.VISIBLE);
                             etFolkIdLogin.setVisibility(View.VISIBLE);
@@ -559,7 +560,7 @@ public class MainActivity extends AppCompatActivity {
             tvTermsPrivacy.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.iskconbangalore.org/privacy-policy/")));
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.example.org/privacy-policy/")));
                 }
             });
 
@@ -743,13 +744,13 @@ public class MainActivity extends AppCompatActivity {
         public void dialogSignUpMemberType() {
             AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
             builder.setTitle("I am a");
-            String[] selectArray = {"Folk Member", "Admin"};
+            String[] selectArray = {"Book Member", "Admin"};
             builder.setItems(selectArray, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     switch (which) {
                         case 0:
-                            tvMemberType.setText("Folk Member");
+                            tvMemberType.setText("Book Member");
 
                             tvFolkIdLogin.setVisibility(View.VISIBLE);
                             etFolkIdLogin.setVisibility(View.VISIBLE);

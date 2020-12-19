@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.singularitycoder.brhatmrdanga.R;
-import com.singularitycoder.brhatmrdanga.home.PlaceModel;
+import com.singularitycoder.brhatmrdanga.home.model.PlaceModel;
 
 import java.util.ArrayList;
 
